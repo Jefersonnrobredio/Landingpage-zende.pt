@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zende Estafetas & recados</title>
+  
+ <!-- box icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <!--header Design-->
+  
+  <header class="header">
+    <div class="logo-container">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="">
+        </a>
+    </div>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+       <a href="#home" class="nav-link active">Home</a>
+<a href="#about" class="nav-link">About</a>
+<a href="#services" class="nav-link">Services</a>
+<a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+    <!-- home section design -->
+
+  <section class="home" id="home">
+      <div class="home-content">
+        <h3>Olá, Somos a</h3>
+        <h1>Zende Estafeta & Recados</h1>
+        <h3>Aqui o seu tempo RENDE! </h3>
+        <p>Sua parceira para tornar a vida mais simples e conveniente.</p>
+        <div class="social-media">
+          <a href="https://www.facebook.com/profile.php?id=100093180744112"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvt1DFKQ0EQxvFfChHraOMRtEthYZPGAwREb2DQMk0qG4v0dhFs7WIjthYWtnqABFIqaK4QCA+mCJKw7OM9SJGtht2d7z87szMNNa9Gzfo2DnCMAU6wj2884XZdJnJecIgpdv+JPeOiCsAQ1yuERrisAvCJVgi94wzz1CfJSdEvDkLwBg8p8eI8BzBDM0S7eKwCUOT2KIT62Av7FV9hf+CtbA2KH3KeiLSH+zoBHbyUBdyhHc6n2Al7jJ+wrzApC1j2+4vuLfYqK/IWkNVo2xokJ0vtKUpGsOpCzjTdTMACXwcqGZt877oAAAAASUVORK5CYII="/></a>
+          <a href="https://wa.me/message/GCAENO26THPYB1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhVJREFUSEvN1UnITnEUBvDfx8JMdoREiChThg1JmVI2hqIUiTInZcGGYiE2xpQSxUKxUJJZSCFiY0ghsjKkKGTu6Lxfb2/3vq/NW99Z3e7//M9zz3Oe89wWTY6WJtfXJgDGYgEmYwh+4Rbu4AIe1GOhXgf9cBgz8DkLPcE3jMZI9MBubMH3IqAygPjSa+iADTiOPwUF1ibAC8zDo9qcIoBeuJdUTMXzBkIYgTNoh+H4Up1fBHAO4zEOL9EH3fC0DlCA3McRrKwHMAk3sCyTh2U37zCghKZKvc3Ygem4VHlZ28E+LEVP/MAm7MzkGPbFOl10SjEEXXPLAB7iNeZkwiocyOcAPtpgHnE/YlQZwBvEDFZkQu+cw0eEbH82ADiEReheBvAsh7WwqlBIcS8OYk2DOQSd69GxDOB88j+h5ktP5jYHvwHYOekK1ZxCdBgReWMwuAxgew62L95WgbTHHqzGJ/55WEg3YlfeiT14j9NYXgYwMBdrG7YW8D0t6RqaZ78xM2UZ3J9Ia2lVW9GihRLC0MLkyiJoiEG+ShH0x12EV02pvlQL0CX5jH3Y2EAxleMofjkBY/tD5q1RCzAbZ7EY0X5s5W0cw9cawJjTEqxLZYVvNTS7/TnISq24MCit+HrSEa4aXjUxk27m9heaYm0H4SGReBVX8AFdMR+zEPING3mcnhUSDe5Lo038Mv9z1sVpTe/gL9I6cRkc/rZLAAAAAElFTkSuQmCC"/></a>
+          <a href="https://instagram.com/zende.pt?igshid=OGQ5ZDc2ODk2ZA=="><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhZJREFUSEvF1UvIT1sYBvDfhyLCRGfkVigkOSeShAFSSnLJ3cQEZ6DIpchAiVxCRgYMJLdco5SYSUkk5XY60emUCSMycu/R+tdu9999X+rrW/Xvv/e73vU+z/s8a63doZtHRzfX12MAo7AFMzCBRiI/8Az3cAz/1hVp18EGHEcf/I8HeNUg5V+YhGH4gr9xsppbB5hcCr7AIrzuokfp8gaGYwqetNbVAa5iPsbivy4UX4s9+IB1eITrWNIEkKJhH5Dq6IW5GI9veIm7JXa7SDmiAAzByCaAjziLjZXq0fciptVAY+wpvMMfOI0oMA8DmgC+4zC2l4Qwv18YbcUd9C7MD5ZdMxPZTRkhsrTk/ArUPUjifuwsC5aVRfm/VOtgOS5gYTE40+eReIg1AoTZjjKf520YiE81gGj9Hnuxu8xF3lVV4u06yIHZXBYcKHINRvypjhbAPuwqE2ewpjOAo+UUZ0222+Wi65UaQJiGcVWivK/ozINqBy2TswUjVUzOCZ+DQ/gHs2omB7BfkwfROSzWV9gOLWZOb7NNV+JtJZ5tOhuRtK3Juazya3fQwmwBPuMWblaYt+o9xiCMaQII+8UY18WrotrURDzFOaxuAvgTYZHEGPymJkvTa4pfQ7yaWmq0lSjB1nUdgx8WSRL/iufoi9HF7MT7I7dw5jfhRJVF0xftdz44R9pd7z32yeyi9J2ndXsHPwHCfnMZO3GOhQAAAABJRU5ErkJggg=="/></a>
+        </div>
+        <a href="tel:+351 939 444 174" class="btn">Ligue-me: </a>
+        <p>"*chamada para a rede móvel nacional" 
+      </div>    
+        
+      <div class="home-video">
+        <video autoplay loop muted playsinline>
+          <source src="video/WhatsApp Video 2023-11-08 at 00.26.49.mp4" type="video/mp4">
+          <source src="video/WhatsApp Video 2023-11-08 at 00.26.49.mp4" type="video/webm">
+        </video>
+     </div>
+ </section>
+
+    <!-- about  section design -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h3><span>Zende Estafeta & recados!</span></h3>
+      <p>Você já se sentiu sobrecarregado com as tarefas diárias e desejou que houvesse mais horas no dia? 
+        A vida moderna é uma correria. Entre o trabalho, a família e o tempo para si, é fácil sentir que os dias simplesmente escorrem pelas mãos. Mas e se você pudesse 'estender' seu dia? E se você pudesse ter mais tempo livre sem sacrificar suas obrigações?
+        É aqui que entra a Zende!
+        Nós entendemos que seu tempo é precioso. Por isso, estamos aqui para ajudá-lo a recuperar as horas perdidas, lidando com as tarefas que consomem sua energia e tempo.
+        Ao utilizar os serviços da Zende, você:
+        *Maximiza sua produtividade; 
+        *Conquista equilíbrio entre trabalho e vida pessoal; 
+        *Confia tarefas essenciais a uma equipe dedicada e confiável.
+        Não deixe que as tarefas diárias te dominem. Permita que a Zende transforme seu dia a dia e te dê a liberdade que você merece!</p>
+       <h3> Valores que nos diferenciam:</h3>
+      <p><span>Compromisso com a Qualidade:</span> Colocamos a qualidade em primeiro lugar em tudo o que fazemos, desde o início do atendimento até a entrega final, garantindo que cada entrega seja feita com excelência.</p>
+      <p><span>Confiabilidade:</span> Nossos clientes podem confiar em nós para cumprir prazos e promessas. Estamos comprometidos em ser uma opção de entrega confiável e consistente.</p>
+      <p><span>Atendimento ao Cliente Excepcional:</span> Valorizamos o relacionamento com nossos clientes e buscamos oferecer um atendimento cordial e personalizado em todas as interações.</p>
+      <p><span>Integridade e Responsabilidade:</span> Mantemos altos padrões de integridade e responsabilidade em todas as entregas. Cuidamos da segurança e da integridade dos itens que transportamos.</p>
+      <p><span>Envolvimento na Comunidade:</span> Somos parte integrante da comunidade de Esposende e estamos empenhados em contribuir positivamente para o seu crescimento e bem-estar.</p>
+     
+
+      <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Mais informações</a>
+    </div>
+  </section>
+
+
+  <!-- services section design -->
+  <section class="services" id="services">
+    <h2 class="heading"><span>Serviços</span></h2>
+
+    <div class="services-container">
+
+      <div class="services-box">
+        <i class='bx bx-cart-add' ></i>
+        <h3>Mercado</h3>
+        <p>Retirar e entregar compras previamente feitas pelos clientes ou realizar compras de uma pequena lista definida pelo cliente;</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bx-injection'></i>
+        <h3>Farmácia</h3>
+        <p>Retirar e entregar medicamentos ou produtos relacionados a saúde e higiene</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bx-bowl-hot'></i>
+        <h3>Restaurantes</h3>
+        <p>Retirar e entregar compras previamente feitas pelos clientes ou realizar compras de uma pequena lista definida pelo cliente;</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bx-building'></i>
+        <h3>Lavandaria</h3>
+        <p>Levar ou retirar roupas em lavanderias;</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bx-cart' ></i>
+        <h3>Compras</h3>
+        <p>Retirar e entregar compras em diversas lojas;</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxs-cat'></i>
+        <h3>Petshop</h3>
+        <p>Retirar e entregar produtos destinados aos pets;</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxl-slack'></i>
+        <h3>Florista</h3>
+        <p>Retirar e entregar flores e arranjos;</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxs-paint' ></i>
+        <h3>Encomendas diversas</h3>
+        <p>Retirar e entregar encomendas personalizadas;</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxs-file-doc' ></i>
+        <h3>Documentos</h3>
+        <p>Retirar e entregar documentos em bancos, Conservatória, órgãos públicos, empresas, etc.;</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxl-paypal' ></i>
+        <h3>Pagamentos</h3>
+        <p>Realizar pagamentos no estabelecimento indicado pelo cliente;</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxs-package' ></i>
+        <h3>CTT</h3>
+        <p>Realizar serviços nos CTTs;</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxs-key' ></i>
+        <h3>Chaves</h3>
+        <p>Fazer cópias de chaves no chaveiro ou buscar e levar chaves esquecidas;</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bxs-gift' ></i>
+        <h3>Doações de roupas</h3>
+        <p>Retirar e entregar roupas às instituições adequadas; (Serviço gratuito com agendamento antecipado);</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+      </div>
+      
+
+      <div class="services-box">
+        <i class='bx bx-bar-chart-alt' ></i>
+        <h3>Outros</h3>
+        <p>Serviços realizados conforme às necessidades dos clientes";</p>
+          <a href="https://wa.me/message/GCAENO26THPYB1" class="btn">Contacta-me</a>
+          
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- contact section design -->
+  <section class="contact" id="contact">
+    <h2 class="heading"> <span>Contacto!</span></h2>
+
+    <form action="https://formspree.io/f/xdorjgng" method="Post">
+      <div class="input-box">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+          <input type="number" placeholder="Mobile Number">
+          <input type="text" placeholder="Email Subject">
+      </div>
+      <textarea name="Mensagem" id="Mensagem" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+       
+    </form>
+
+  </section>
+
+  <!-- footer design -->
+  <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by J.robredio | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+  </footer>
+
+
+  <!--scroll reveal-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--typed js-->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+  <!-- custom js -->
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>
